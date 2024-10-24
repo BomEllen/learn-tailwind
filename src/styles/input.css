@@ -29,6 +29,28 @@
   }
 }
 
+body {
+  background: theme("colors.slate.900");
+}
+
+@media screen(sm) {
+  body {
+    background: theme("colors.slate.700");
+  }
+}
+
+@media screen(md) {
+  body {
+    background: theme("colors.slate.500");
+  }
+}
+
+@media screen(lg) {
+  body {
+    background: theme("colors.slate.200");
+  }
+}
+
 @layer utilities {
   .text-pesto-100 {
     color: #e8e4d6;
