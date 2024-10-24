@@ -653,6 +653,10 @@ abbr[title] {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -669,10 +673,6 @@ abbr[title] {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-4 {
@@ -706,6 +706,18 @@ abbr[title] {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.font-suit {
+  font-family: "SUIT Variable";
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-pretendard {
+  font-family: "Pretendard";
 }
 
 .text-3xl {
@@ -766,6 +778,28 @@ abbr[title] {
 
 /* base 스타일 재구성 */
 
+body {
+  background: #0f172a;
+}
+
+@media (min-width: 640px) {
+  body {
+    background: #334155;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #64748b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #e2e8f0;
+  }
+}
+
 /* 스타일 재사용 */
 
 .avatar-card {
@@ -820,12 +854,7 @@ abbr[title] {
   }
   .avatar-card__caption {
     strong {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-    }
-    strong {
-      --tw-text-opacity: 1;
-      color: rgb(55 65 81 / var(--tw-text-opacity));
+      /* @apply text-3xl text-gray-700; */
     }
     p {
       font-size: 1.125rem;
